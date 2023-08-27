@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="/CSS/MENÚ.css">
+    <link rel="icon" href="/IMG/FONDO/netflix.png">
+</head>
+<body>
+    
+    <div class="contenedor">
+        <div class="imagen-fondo">
+            <!-- Imagen de fondo -->
+            <img src="/IMG/FONDO/fotos.jpg" alt="imagen-contenedor">
+        </div>
+    
+        <div class="elementos-encima">
+            <div class="contenido">
+                <!-- Barra de navegación -->
+                <nav>
+                    <!-- Logo y opciones de navegación -->
+                    <div class="slogan">
+                        <img src="/IMG/FONDO/slogan.png" alt="foto">
+                        <select id="languageSelect" onchange="changeLanguage()">
+                            <option value="es">Español</option>
+                            <option value="in">Inglés</option>
+                        </select>
+                        
+                        <ul><li><a href="/ESTRUCTURA/CUENTA/formulario.html">Iniciar Sesión</a></li></ul>
+                    </div>
+                </nav>
+    
+                <!-- Contenido principal -->
+                <div class="artículos">
+                    <h1>Películas y series ilimitada y mucho  <br>  más</h1>
+                    <p>Disfruta dónde quieras. Cancelas cuando quieras</p>
+                    <footer>
+                        <p>¿Quieres ver Netflix? Ingresa tu correo para crear una cuenta o reiniciar tu membresía de Netflix.</p>
+                    </footer>
+    
+                    <a href="/ESTRUCTURA/CUENTA/configuración.html">
+                    <form>
+                    <div class="iniciar-sesión">
+                            <input type="email" placeholder="Email" required>
+                            <button type="submit">Comenzar ></button>
+                        </form>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="segundo-contenedor">
+            <div class="elementos">
+                <img src="/IMG/FONDO/negro 2.jpg" alt="fondo" class="imagen-fondo">
+                
+                <div class="contenido-izquierdo2">
+                    <h3>Disfruta en tu TV</h3>
+                    <p>Disponible para smart TV, PlayStation, Xbox,
+                    <br> Chromecast, Apple TV, reproductores de Blu-
+                    <br> ray, entre otros.</p>
+                </div>
+                
+                <div class="contenido-derecho2">
+                    <img src="/IMG/ELEMENTOS/tv.jpeg" alt="TV" class="imagen-televisor">
+                </div>
+            </div>
+        </div>
+
+    <div class="tercer-contenedor">
+        <div class="elementos">
+                <img src="/IMG/FONDO/negro 2.jpg" alt="fondo" class="imagen-fondo">
+                
+                <div class="contenido-derecho3">
+                    <h3>Descarga tus <br>
+                        series para verlas <br>
+                        offline
+                    </h3>
+                    <p>
+                        Guarda tu contenido en tus dispositivos y tendrás
+                        algo para ver.
+                    </p>
+                </div>
+
+                <div class="contenido-izquierdo3">
+                    <img src="/IMG/ELEMENTOS/MÓVIL.jpeg" alt="imagen-libre" class="imagen-libre">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cuarto-contenedor">
+        <div class="elementos">
+                <img src="/IMG/FONDO/negro 2.jpg" alt="fondo" class="imagen-fondo">
+                
+                <div class="contenido-izquierdo4">
+                    <h3>Disfruta donde quieras</h3>
+
+                    <p>
+                    Películas, series y animes ilimitadas en tus
+                    dispositivos móviles, tablets, computadoras y TV.
+                    </p>
+                </div>
+
+                <div class="contenido-derecho4">
+                    <img src="/IMG/ELEMENTOS/LIBRE.jpeg" alt="libre" class="imagen-libre">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="quinto-contenedor">
+        <div class="elementos">
+                <img src="/IMG/FONDO/negro 2.jpg" alt="fondo" class="imagen-fondo">
+                
+                <div class="contenido-derecho5">
+                    <h3>Crea perfiles para niños</h3>
+
+                    <p>Los niños disfrutarán sus personajes favoritos en un espacio sólo diseñados para ellos.</p>
+                </div>
+
+                <div class="contenido-izquierdo5">
+                    <img src="/IMG/ELEMENTOS/NIÑOS.png" alt="niños" class="imagen-niños">
+                </div>
+            </div>
+        </div>
+    </div>
+        
+<div class="preguntas-frecuentes">
+    <img src="/IMG/FONDO/negro 2.jpg" alt="fondo">
+    <div class="elementos">
+        <h3>Preguntas frecuentes</h3>
+
+        <ul>
+            <button type="button" class="mostrar-mas-btn" onclick="mostrarMas('mensaje1')">¿Qué es Netflix?</button>
+            <i class="fas fa-plus">
+                <div class="mensaje contenido-container" id="mensaje1">
+                    <span>
+                        Es un servicio de streaming que brinda una
+                        gran variedad de películas, series, animes,
+                        documentales guardados en cualquier pantalla
+                        conectada a internet.
+
+                        <br><br>
+                        
+                        Todo lo que quieras ver, sin límites ni anuncios.
+                        A un costo muy accesible. Siempre hay algo nuevo
+                        por descubrir..</span>
+                </div>
+            </i>
+        </ul>
+
+        <ul>
+            <button type="button" class="mostrar-mas-btn" onclick="mostrarMas('mensaje2')">¿Cuánto cuesta Netflix?</button>
+            <i class="fas fa-plus">
+                <div class="mensaje contenido-container" id="mensaje2">
+                    <span>Obtienes todas las funciones por una tarifa plana mensual. Donde tienes planes desde $16.900 hasta $38.900 al mes sin costos adicionales ni contratos.</span>
+                </div>
+            </i>
+        </ul>
+
+        <ul>
+            <button type="button" class="mostrar-mas-btn" onclick="mostrarMas('mensaje3')">¿Dónde puevo ver Netflix?</button>
+            <i class="fas fa-plus">
+                <div class="mensaje contenido-container" id="mensaje3">
+                    <span>
+                        Inicia sesión en tu cuenta de Netflix para ver
+                        contenido al instante en cualquier dispositivo
+                        con conexión a internet que cuenta con la aplicación.
+
+                        <br><br>
+                        
+                        Además, puedes descargar tus series y/o películas
+                        favoritas con iOS, Android o la app para Windows 10.
+                        Llevas Netflix contigo adonde sea..</span>
+                </div>
+            </i>
+        </ul>
+
+        <ul>
+            <button type="button" class="mostrar-mas-btn" onclick="mostrarMas('mensaje4')">¿Cómo cancelo?</button>
+            <i class="fas fa-plus">
+                <div class="mensaje contenido-container" id="mensaje4">
+                    <span>La plataforma es flexible y sin complicaciones. Sin contratos absurdos ni molestos. Cancela la membresía online con solo dos clips. No hay cargos por cancelación.</span>
+                </div>
+            </i>
+        </ul>
+
+        <ul>
+            <button type="button" class="mostrar-mas-btn" onclick="mostrarMas('mensaje5')">¿Qué puedo ver en Netflix?</button>
+            <i class="fas fa-plus"></i>
+                <div class="mensaje contenido-container" id="mensaje5">
+                    <span>Tiene un catálogo amplio de películas, series, documentales, animes, entre otros. Todo lo que deseas ver, cuando quieras.</span>
+                </div>
+            </i>
+        </ul>
+
+        <div class="artículos">
+            <footer>
+                <p>¿Quieres ver Netflix? Ingresa tu correo para crear una cuenta o reiniciar tu membresía de Netflix.</p>
+            </footer>
+            <form>
+                <div class="iniciar-sesión">
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit">Comenzar ></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="/JAVA/mensaje.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+        <div class="pie-página">
+            <img src="/IMG/FONDO/negro 2.jpg" alt="fondo">
+                <div class="elementos">
+                    <h5>¿Preguntas? Llama al 01 249 049 0493</h5>
+                </div>
+
+                    <div class="menú-secundario">
+                        <nav>
+                            <p>Avisos legales</p>
+                            <p>Centro de ayuda</p>
+                            <p>Información corporativa</a>
+                            <p>Preguntas frecuentes</a>
+                            <p>Privacidad</p>
+                            <p>Términos de uso</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

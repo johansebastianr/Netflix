@@ -1,0 +1,606 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Contenedor principal */
+.contenedor {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para la barra de navegación */
+.slogan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.slogan img {
+    width: 150px;
+    height: auto;
+    margin-right: 490px;
+}
+
+/* Estilos para el contenido */
+.contenido {
+    position: absolute;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    justify-content: center;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+    max-width: auto;
+    height: auto;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Imagen de fondo */
+.imagen-fondo img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Contenido encima de la imagen */
+.elementos-encima {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.elementos-encima nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.elementos-encima nav img {
+    width: 150px;
+    height: auto;
+}
+
+.slogan select {
+    padding: 5px 0;
+    width: 10%;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    margin: -18px;
+}
+
+.elementos-encima ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+}
+
+.elementos-encima ul a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 50px;
+    background-color: red;
+    font-family: sans-serif;
+    border-radius: 3px;
+    padding: 10px 17px;
+    background: rgb(229,9,20);
+    color: rgb(255,255,255);
+}
+
+.elementos-encima h1 {
+    font-size: 8.5vh;
+    font-weight: bold;
+    color: white;
+    font-family: sans-serif;
+    margin: 25px;
+    font-weight: 900;
+}
+
+.elementos-encima p {
+    font-size: 3.5vh;
+    text-align: center;
+}
+
+.elementos-encima footer {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.elementos-encima .iniciar-sesión {
+    margin-top: 35px;
+}
+
+.iniciar-sesión input[type="email"] {
+    width: 20%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.iniciar-sesión button[type="submit"] {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.iniciar-sesión input[type="submit"]:hover {
+    background-color: darkred;
+}
+
+.iniciar-sesión input[type="text"]:hover {
+    color: black;
+}
+
+/* Estilos para el segundo contenedor */
+.segundo-contenedor {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
+.segundo-contenedor .elementos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+
+.segundo-contenedor .imagen-fondo {
+    max-width: 100%;
+    max-height: 100%;
+    width: 150px;
+    height: 550px;
+    object-fit: cover;
+    justify-content: center;
+}
+
+.segundo-contenedor .contenido-izquierdo2 {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    text-align: left;
+    justify-content: left;
+}
+
+.segundo-contenedor .contenido-izquierdo2 h3 {
+    font-size: 8.5vh;
+    margin-bottom: 15px;
+    text-align: left;
+    font-weight: bold;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+.segundo-contenedor .contenido-izquierdo2 p {
+    font-size: 4vh;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.segundo-contenedor .contenido-derecho2 {
+    flex: 1;
+    position: relative;
+    text-align: left;
+}
+
+.segundo-contenedor .contenido-derecho2 .imagen-televisor {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Estilo para el tercer contenedor */
+.tercer-contenedor {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
+.tercer-contenedor .elementos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.tercer-contenedor .imagen-fondo {
+    max-width: 100%;
+    max-height: 100%;
+    width: 550px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.tercer-contenedor .contenido-izquierdo3 {
+    position: absolute;
+    top: -50px;
+    left: 0px;
+    width: 680px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.tercer-contenedor .contenido-izquierdo3 .imagen-libre {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    margin: 75px;
+}
+
+.tercer-contenedor .contenido-derecho3 {
+    flex: 1;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 110px;
+    margin: 65px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.tercer-contenedor .contenido-derecho3 h3 {
+    font-size: 8vh;
+    margin-bottom: 18px;
+    text-align: left;
+    font-weight: bold;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+.tercer-contenedor .contenido-derecho3 p {
+    font-size: 4vh;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Estilo para el cuarto contenedor */
+.cuarto-contenedor {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
+.cuarto-contenedor .elementos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+
+.cuarto-contenedor .imagen-fondo {
+    max-width: 100%;
+    max-height: 100%;
+    width: 0px;
+    height: 550px;
+    object-fit: cover;
+    justify-content: center;
+    margin: 35px;
+}
+
+.cuarto-contenedor .contenido-izquierdo4 {
+    flex: 1;
+    padding: 100px;
+    box-sizing: border-box;
+    color: white;
+    text-align: left;
+    justify-content: left;
+}
+
+.cuarto-contenedor .contenido-izquierdo4 h3 {
+    font-size: 8.5vh;
+    margin-bottom: 15px;
+    text-align: left;
+    font-weight: bold;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+.cuarto-contenedor .contenido-izquierdo4 p {
+    font-size: 4vh;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.cuarto-contenedor .contenido-derecho4 {
+    flex: 1;
+    position: relative;
+    text-align: left;
+}
+
+.cuarto-contenedor .contenido-derecho4 .imagen-libre {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Editamos el quinto contenedor */
+.quinto-contenedor {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
+.quinto-contenedor .elementos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.quinto-contenedor .imagen-fondo {
+    max-width: 100%;
+    max-height: 100%;
+    width: 550px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.quinto-contenedor .contenido-izquierdo5 {
+    position: absolute;
+    top: -50px;
+    left: 0px;
+    width: 680px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.quinto-contenedor .contenido-izquierdo5 .imagen-niños {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    margin: 75px;
+}
+
+.quinto-contenedor .contenido-derecho5 {
+    flex: 1;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 100px;
+    margin: 70px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.quinto-contenedor .contenido-derecho5 h3 {
+    font-size: 8vh;
+    margin-bottom: 18px;
+    text-align: left;
+    font-weight: bold;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+.quinto-contenedor .contenido-derecho5 p {
+    font-size: 4vh;
+    line-height: 1.3;
+    text-align: left;
+}
+
+/* Editamos las preguntas frecuentes */
+
+.mostrar-mas-btn {
+    background-color: rgb(45, 45, 45);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 25px;
+    width: 50%;
+    padding: 10px;
+    font-family: sans-serif;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.mostrar-mas-btn i {
+    transition: transform 0.3s ease-in-out;
+}
+
+.mostrar-mas-btn.active i {
+    transform: rotate(180deg);
+}
+
+.mostrar-mas-btn:hover {
+    background-color: #e53935;
+}
+
+/* Estilos para el contenido del mensaje */
+.mensaje {
+    overflow: hidden;
+    max-height: 0px;
+    font-family: sans-serif;
+    position: relative;
+    top: 20%;
+    left: 24%;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 15px;
+    padding: 0px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.mensaje.active {
+    max-height: 1000px;
+    padding: 10px 20px;
+}
+
+/* Estilos para el contenedor de preguntas frecuentes */
+.preguntas-frecuentes {
+    position: relative;
+    background-color: #000;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.preguntas-frecuentes img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.preguntas-frecuentes .elementos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: auto;
+}
+
+.preguntas-frecuentes h3 {
+    font-size: 8.5vh;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+.preguntas-frecuentes p {
+    font-size: 18px; /* Tamaño de fuente uniforme */
+    margin-top: 15px;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* Editamos el pie de página */
+
+/* Estilos para el pie de página */
+.pie-página {
+    position: relative;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.pie-página img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.pie-página h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: red;
+    font-family: sans-serif;
+}
+
+.menú-secundario {
+    margin-top: 15px;
+}
+
+.menú-secundario p {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    margin: 40px;
+    font-size: 14px;
+    font-family: sans-serif;
+    transition: color 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

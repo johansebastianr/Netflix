@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/IMG/FONDO/netflix.png">
+    <link rel="stylesheet" href="/CSS/PLAN.css">
+    <title>Netflix</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>Elige el plan ideal para ti</h1>
+        </header>
+        <main>
+            <div class="plan" id="planBasico">
+                <h2>Plan Básico</h2>
+                <p>1 pantalla</p>
+                <p>Calidad estándar</p>
+                <p>Descargas en 1 dispositivo</p>
+                <p>Sin compromisos</p>
+                <p class="precio">$8.99/mes</p>
+                <a href="/ESTRUCTURA/CUENTA/pago.html" class="boton" onclick="seleccionarPlan('Básico', 8.99)">Seleccionar</a>
+            </div>
+            <div class="plan" id="planEstándar">
+                <h2>Plan Estándar</h2>
+                <p>2 pantallas</p>
+                <p>Calidad HD</p>
+                <p>Descargas en 2 dispositivos</p>
+                <p>Sin compromisos</p>
+                <p class="precio">$13.99/mes</p>
+                <a href="/ESTRUCTURA/CUENTA/pago.html" class="boton" onclick="seleccionarPlan('Estándar', 13.99)">Seleccionar</a>
+            </div>
+            <div class="plan" id="planPremium">
+                <h2>Plan Premium</h2>
+                <p>4 pantallas</p>
+                <p>Calidad Ultra HD</p>
+                <p>Descargas en 4 dispositivos</p>
+                <p>Sin compromisos</p>
+                <p class="precio">$17.99/mes</p>
+                <a href="/ESTRUCTURA/CUENTA/pago.html" class="boton" onclick="seleccionarPlan('Premium', 17.99)">Seleccionar</a>
+            </div>
+        </main>
+        <footer>
+            <p>¿Necesitas ayuda? <a href="#">Contáctanos</a></p>
+        </footer>
+    </div>
+    <script src="/JAVA/información.js"></script>
+</body>
+</html>

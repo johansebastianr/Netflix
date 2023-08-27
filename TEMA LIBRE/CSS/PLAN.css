@@ -1,0 +1,75 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #e50914;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.plan:hover {
+    transform: scale(1.02);
+}
+
+.plan h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.precio {
+    color: #e50914;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #e50914;
+    text-decoration: none;
+}

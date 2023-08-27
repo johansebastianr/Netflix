@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilos para la barra de navegación */
+.slogan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.slogan img {
+    width: 150px;
+    height: auto;
+    margin-right: 490px;
+}
+
+/* Estilos para el contenido */
+.contenido {
+    position: absolute;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    justify-content: center;
+    height: 110px;
+    margin: 0px;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    border: 1px solid #ccc; /* Agrega el borde delgado */
+}
+
+.elementos-encima nav {
+    text-align: center;
+}
+
+.elementos-encima ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+}
+
+.elementos-encima ul a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 50px;
+    background-color: red;
+    font-family: sans-serif;
+    border-radius: 3px;
+    padding: 10px 17px;
+    background: rgb(229,9,20);
+    color: rgb(255,255,255);
+}
+
+.pasos img {
+    max-width: 400px;
+    justify-content: center;
+    filter: brightness(1.2) contrast(1.2);
+    margin: 0px;
+    position: relative;
+    top:0x;
+    left: 10px;
+}
+
+h1 {
+    font-size: 5vh;
+    position: relative;
+    font-weight: bold;
+    color: #e50914;
+    margin-bottom: 10px;
+    top: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+p {
+    font-size: 19px;
+    position: relative;
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #333;
+    top: 20px;
+    text-align: center;
+}
+
+.segundo-paso a {
+    text-decoration: none;
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    background-color: #e50914;
+    padding: 10px 20px;
+    border-radius: 4px;
+    top: 45px;
+    left: 160px;
+    transition: background-color 0.3s ease;
+}
+
+.segundo-paso a:hover {
+    background-color: #c30810;
+}

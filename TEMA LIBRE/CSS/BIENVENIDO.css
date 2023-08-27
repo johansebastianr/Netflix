@@ -1,0 +1,159 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilos para la barra de navegación */
+.slogan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.slogan img {
+    width: 150px;
+    height: auto;
+    margin-right: 490px;
+}
+
+/* Estilos para el contenido */
+.contenido {
+    position: absolute;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    justify-content: center;
+    height: 110px;
+    margin: 0px;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    border: 1px solid #ccc;
+}
+
+.elementos-encima nav {
+    text-align: center;
+}
+
+.elementos-encima ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+}
+
+.elementos-encima ul a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 50px;
+    background-color: red;
+    font-family: sans-serif;
+    border-radius: 3px;
+    padding: 10px 17px;
+    background: rgb(229,9,20);
+    color: rgb(255,255,255);
+}
+
+h1 {
+    font-size: 5vh;
+    position: relative;
+    font-weight: bold;
+    color: #e50914;
+    margin-bottom: 10px;
+    top: 85px;
+    left: 18%;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+p {
+    font-size: 19px;
+    position: relative;
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #333;
+    left: 18%;
+    top: 90px;
+    text-align: left;
+}
+
+.formulario {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(57, 54, 54, 0.1);
+    padding: 20px;
+    position: relative;
+    top: 100px;
+    left: 0%;
+    text-align: center;
+    width: 450px;
+}
+
+.formulario h1 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+}
+
+.formulario p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    top: 0px;
+    left: 20px;
+}
+
+.formulario label {
+    display: block;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario button {
+    width: 150px;
+    position: relative;
+    left: 0px;
+    padding: 15px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: #d30813;
+}
+
+.formulario a {
+    color: #e50914;
+    text-decoration: none;
+}
+
+.formulario a:hover {
+    text-decoration: underline;
+}
+
